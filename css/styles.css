@@ -1,0 +1,94 @@
+:root {
+  --main-color: #212121;
+  --highlight-color: #2196f3;
+  --grey-color: #757575;
+  --white-color: #ffffff;
+  --background-color: #2f303a;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+.link {
+  color: var(--main-color);
+}
+
+.link:hover,
+:focus {
+  color: var(--highlight-color);
+  background-color: transparent;
+}
+.link-mail,
+.link-tel {
+  color: var(--grey-color);
+}
+
+.current {
+  color: var(--highlight-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.03px;
+  color: var(--main-color);
+  margin: 10px;
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03px;
+  color: var(--grey-color);
+  margin: 10px;
+  padding: 0 0 20px 0;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  padding: 10px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0.03px;
+}
+
+/* -----------Portfolio------------ */
+
+.button {
+  border: none;
+  margin: 4px;
+  padding: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.button:hover,
+:focus {
+  color: var(--white-color);
+  background-color: var(--highlight-color);
+}
