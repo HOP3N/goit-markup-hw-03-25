@@ -160,3 +160,455 @@ a {
   padding: 30px 0px 30px 0px;
   color: #969696;
 }
+
+/* -----------Portfolio Page Styling----------- */
+
+header {
+  border-bottom: 1px solid #ececec;
+  padding: 24px 0;
+}
+
+header .list {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+
+header .link {
+  font-weight: 500;
+  color: var(--main-color);
+  transition: color 250ms ease;
+}
+
+header .link:hover,
+header .link:focus {
+  color: var(--highlight-color);
+}
+
+header > div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header > div .list {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Portfolio Buttons */
+.button {
+  background-color: #f5f4fa;
+  color: var(--main-color);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: all 250ms ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--highlight-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Portfolio Grid */
+main > div:first-of-type {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+
+main section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 20px;
+  margin: 50px 0;
+}
+
+main section div {
+  border: 1px solid #ececec;
+  background-color: var(--white-color);
+  overflow: hidden;
+  transition: box-shadow 250ms ease;
+}
+
+main section div:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+main section img {
+  width: 100%;
+  display: block;
+}
+
+main section .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+  margin: 20px 24px 4px 24px;
+  padding: 0;
+}
+
+main section .sub-title {
+  color: var(--grey-color);
+  font-size: 16px;
+  line-height: 188%;
+  margin: 0 24px 20px 24px;
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-color);
+  padding: 60px 0;
+  color: var(--white-color);
+}
+
+footer a {
+  color: var(--white-color);
+  transition: color 250ms ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--highlight-color);
+}
+
+footer address {
+  margin-left: 20px;
+}
+
+footer address p {
+  color: var(--white-color);
+  font-style: normal;
+  margin: 20px 0;
+  line-height: 171%;
+}
+
+footer .link-mail,
+footer .link-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+footer .link-mail:hover,
+footer .link-tel:hover {
+  color: var(--highlight-color);
+}
+/* ======= CLEAN MODERN STYLING ======= */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+} */
+
+/* HEADER */
+header {
+  border-bottom: 2px solid #f0f0f0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+header nav {
+  flex: 1;
+  margin: 0 50px;
+}
+
+header nav .list {
+  display: flex;
+  gap: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+header .link {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--main-color);
+  transition: color 200ms ease;
+  position: relative;
+}
+
+header .link:hover,
+header .link:focus {
+  color: var(--highlight-color);
+}
+
+header .link.current {
+  color: var(--highlight-color);
+}
+
+header > div .list {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+header .link-mail,
+header .link-tel {
+  font-size: 14px;
+  color: var(--grey-color);
+  transition: color 200ms ease;
+}
+
+header .link-mail:hover,
+header .link-tel:hover {
+  color: var(--highlight-color);
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 100px 50px;
+  text-align: center;
+  color: white;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero .button {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.hero .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* FEATURES SECTION */
+main > section:nth-of-type(2) {
+  padding: 80px 50px;
+  background: #fafafa;
+}
+
+main > section:nth-of-type(2) > * {
+  display: inline-block;
+  width: 23%;
+  margin-right: 2%;
+  vertical-align: top;
+}
+
+main > section:nth-of-type(2) > *:nth-child(4n) {
+  margin-right: 0;
+}
+
+main > section:nth-of-type(2) .title {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  display: block;
+  width: 100%;
+  margin-right: 0;
+}
+
+main > section:nth-of-type(2) .sub-title {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey-color);
+  line-height: 1.7;
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+/* WHAT WE DO SECTION */
+/* main > section:nth-of-type(3) {
+  padding: 80px 50px;
+}
+
+main > section:nth-of-type(3) > .section-title {
+  text-align: center;
+  font-size: 36px;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+main > section:nth-of-type(3) > .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0;
+  margin: 0 0 80px 0;
+}
+
+main > section:nth-of-type(3) > .list li {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 0;
+  padding: 0;
+}
+
+main > section:nth-of-type(3) > .list img {
+  width: 100%;
+  display: block;
+  transition: transform 300ms ease;
+}
+
+main > section:nth-of-type(3) > .list li:hover img {
+  transform: scale(1.05);
+} */
+
+/* TEAM SECTION */
+/* main > section:nth-of-type(3) > section {
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  padding: 80px 50px;
+  border-radius: 12px;
+}
+
+main > section:nth-of-type(3) > section .section-title {
+  text-align: center;
+  font-size: 36px;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+main > section:nth-of-type(3) > section .list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+main > section:nth-of-type(3) > section li {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+main > section:nth-of-type(3) > section li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+main > section:nth-of-type(3) > section img {
+  width: 100%;
+  display: block;
+}
+
+main > section:nth-of-type(3) > section .title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--main-color);
+  margin: 20px 0 5px 0;
+}
+
+main > section:nth-of-type(3) > section .sub-title {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grey-color);
+  margin: 0 0 20px 0;
+  padding: 0;
+} */
+
+/* FOOTER */
+footer {
+  background: #1a1a1a;
+  padding: 50px;
+  color: white;
+}
+
+footer a {
+  color: white;
+  transition: color 200ms ease;
+}
+
+footer a:hover {
+  color: #667eea;
+}
+
+footer address {
+  margin-bottom: 20px;
+}
+
+footer address a {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer address p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 15px 0;
+}
+
+footer .list {
+  padding: 0;
+  margin: 0;
+}
+
+footer .link-mail,
+footer .link-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  display: block;
+  margin: 8px 0;
+}
+
+footer .link-mail:hover,
+footer .link-tel:hover {
+  color: #667eea;
+}
