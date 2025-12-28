@@ -22,6 +22,11 @@ a {
   padding: 10px;
   margin: 10px;
 }
+
+.logo-black {
+  color: var(--main-color);
+  margin: -4px;
+}
 .link {
   color: var(--main-color);
 }
@@ -101,7 +106,7 @@ a {
   padding: 30px;
   margin: 30px;
   background-color: var(--background-color);
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .logo {
@@ -117,7 +122,7 @@ a {
   color: var(--highlight-color);
   margin: 0px;
 }
-.logo-black {
+.logo-white {
   color: var(--white-color);
   margin: -4px;
 }
