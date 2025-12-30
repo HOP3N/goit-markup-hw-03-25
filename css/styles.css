@@ -309,9 +309,18 @@ section.services {
   color: var(--highlight-color);
 }
 
-.link-mail-contacts,
+.contacts-content {
+ margin: 30px 0 30px 0;
+}
+
+.link-mail-contacts {
+  color: #969696;
+  margin-bottom: 20px ;
+  padding-bottom: 10px;
+}
 .link-tel-contacts {
-  padding: 30px 0px 30px 0px;
+  margin-top: 10px;
+  padding-top: 10px;
   color: #969696;
 }
 
