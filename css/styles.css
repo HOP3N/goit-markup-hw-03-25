@@ -550,7 +550,7 @@ header .link-tel:hover {
   font-size: 48px;
   font-weight: 900;
   margin-bottom: 40px;
-  color: white;
+  color: var(--white-color);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -569,19 +569,25 @@ header .link-tel:hover {
 }
 
 .hero .button:hover {
-  /* transform: translateX(-4px); */
-  /* transform: translateY(4px); */
   transform: scale(1.05);
   box-shadow: 0 0 0 6px rgba(102, 126, 234, 0.6);
-  color: rebeccapurple;
-  /* background-color: rgba(220, 218, 226, 0.9); */
+  color: rgba(149, 54, 149, 0.6);
 }
 
 /* FOOTER */
+
 footer {
   background: #1a1a1a;
-  padding: 50px;
+  padding: 20px;
   color: white;
+}
+
+.contacts-footer-container {
+  /* display: flex; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* max-width: 1200px; */
+  margin: 20px auto;
 }
 
 footer a {
@@ -617,7 +623,7 @@ footer .link-tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   display: block;
-  margin: 8px 0;
+
 }
 
 footer .link-mail:hover,
@@ -659,6 +665,19 @@ a {
 
 img {
   display: block;
+}
+.link-address-footer {
+padding: 10px 0 10px 0;
+
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin: 20px 0 20px 0;
 }
 
 /* ----------------HEADER----------------- */
@@ -770,15 +789,16 @@ img {
   padding-bottom: 60px;
 }
 
-/* .logo-footer {
-} */
-
+.link .logo {
+  margin-left: 4px;
+}
 .logo-footer-blue {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-left: 4px;
   color: var(--text-hover-color);
 }
 
