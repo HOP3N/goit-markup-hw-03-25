@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    fetch("./.vscode/toggle-address.json")
+    fetch("./js/toggle-address.json")
       .then(function (res) {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();
