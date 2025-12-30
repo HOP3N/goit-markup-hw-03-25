@@ -10,52 +10,57 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
+    <main class="main-contacts">
       <div class="hero-contacts">
-        <a class="link logo" href="./index.html">
-          <span class="logo-blue">Web</span>
-          <span class="logo-white">Studio</span>
-        </a>
+        <div class="contacts-header">
+          <a class="link logo" href="./index.html">
+            <span class="logo-blue">Web</span>
+            <span class="logo-white">Studio</span>
+          </a>
 
-        <ul class="list list--header-contacts">
-          <li></li>
-          <li>
-            <a class="link link-contacts" href="./index.html">Студія</a>
-          </li>
-          <li>
-            <a class="link link-contacts" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li>
-            <a class="link current" href="#">Контакти</a>
-          </li>
-        </ul>
-        <a class="link link-address" href="#" role="button"
-          >м. Київ, пр-т Лесі Українки, 26</a
-        >
-        <ul class="list">
-          <li class="address-title"></li>
-          <li class="link address-title">
-            <a
-              class="link link-mail link-mail-contacts"
-              href="mailto:info@devstudio.com"
-              >mailto:info@devstudio.com</a
-            >
-          </li>
-          <li class="address-title">
-            <a class="link link-tel link-tel-contacts" href="tel:+38096111111"
-              >tel:+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="list list--header-contacts">
+            <li>
+              <a class="link link-contacts" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="link link-contacts" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a class="link current" href="#">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-right">
+          <a class="link link-address" href="#" role="button"
+            >м. Київ, пр-т Лесі Українки, 26</a
+          >
+        </div>
+        <div class="contacts-content">
+          <div class="contacts-left">
+            <ul class="list">
+              <li class="link address-title">
+                <a
+                  class="link link-mail link-mail-contacts"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-title">
+                <a
+                  class="link link-tel link-tel-contacts"
+                  href="tel:+38096111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
     <script src="./js/address.js"></script>
