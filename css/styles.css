@@ -581,15 +581,26 @@ footer {
   padding: 20px;
   color: white;
 }
-
-.contacts-footer-container {
+.link-address-footer {
+  padding: 10px 0 20px 0;
+}
+.list-item-footer {
   /* display: flex; */
   justify-content: space-between;
   /* align-items: flex-start; */
   /* max-width: 1200px; */
-  margin: 20px auto;
+  margin: 20px;
 }
 
+.link-mail-footer {
+  margin: 10px 0 0 0;
+  padding: 20px 0 4px 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+.link-tel-footer {
+  /* padding: 10px 0 4px 0; */
+  color: rgba(255, 255, 255, 0.6);
+}
 footer a {
   color: white;
   transition: color 200ms ease;
@@ -623,7 +634,8 @@ footer .link-tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   display: block;
-
+  transition: color 200ms ease;
+  margin: 10px 0;
 }
 
 footer .link-mail:hover,
@@ -665,10 +677,6 @@ a {
 
 img {
   display: block;
-}
-.link-address-footer {
-padding: 10px 0 10px 0;
-
 }
 
 .logo-footer {
