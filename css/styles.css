@@ -310,12 +310,12 @@ section.services {
 }
 
 .contacts-content {
- margin: 30px 0 30px 0;
+  margin: 30px 0 30px 0;
 }
 
 .link-mail-contacts {
   color: #969696;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
   padding-bottom: 10px;
 }
 .link-tel-contacts {
@@ -438,45 +438,6 @@ main.main-portfolio section .sub-title {
   padding: 0;
 }
 
-/* Footer */
-footer {
-  background-color: var(--background-color);
-  padding: 60px 0;
-  color: var(--white-color);
-}
-
-footer a {
-  color: var(--white-color);
-  transition: color 250ms ease;
-}
-
-footer a:hover,
-footer a:focus {
-  color: var(--highlight-color);
-}
-
-footer address {
-  margin-left: 20px;
-}
-
-footer address p {
-  color: var(--white-color);
-  font-style: normal;
-  margin: 20px 0;
-  line-height: 171%;
-}
-
-footer .link-mail,
-footer .link-tel {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-}
-
-footer .link-mail:hover,
-footer .link-tel:hover {
-  color: var(--highlight-color);
-}
-
 /* HEADER */
 header {
   border-bottom: 2px solid #f0f0f0;
@@ -586,40 +547,84 @@ header .link-tel:hover {
 /* FOOTER */
 
 footer {
-  background: #1a1a1a;
+  background-color: var(--background-color);
   padding: 20px;
-  color: white;
-}
-.link-address-footer {
-  padding: 10px 0 20px 0;
-}
-.list-item-footer {
-  /* display: flex; */
-  justify-content: space-between;
-  /* align-items: flex-start; */
-  /* max-width: 1200px; */
-  margin: 20px;
+  color: var(--white-color);
 }
 
-.link-mail-footer {
-  margin: 10px 0 0 0;
-  padding: 20px 0 4px 0;
-  color: rgba(255, 255, 255, 0.6);
-}
-.link-tel-footer {
-  /* padding: 10px 0 4px 0; */
-  color: rgba(255, 255, 255, 0.6);
-}
 footer a {
-  color: white;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--highlight-color);
   transition: color 200ms ease;
 }
 
-footer a:hover {
-  color: #667eea;
+.footer-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
 }
 
-footer address {
+footer .logo {
+  font-size: 16px;
+  font-weight: 500;
+  /* margin-bottom: 20px; */
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.address-title {
+  margin-top: 20px;
+}
+
+.link-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 20px;
+}
+
+.link-address:hover {
+  color: var(--highlight-color);
+}
+
+.link-address--footer {
+  padding: 10px 0;
+  /* margin: 70px 0 ; */
+}
+
+.link-mail-footer,
+.link-tel-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 10px 0 0 0;
+}
+.link-mail-item {
+  padding: 10px 0 0 0;
+  margin: 10px 0 0 0;
+}
+
+.link-mail-footer:hover,
+.link-tel-footer:hover {
+  color: var(--highlight-color);
+}
+
+/* footer address {
   margin-bottom: 20px;
 }
 
@@ -636,9 +641,9 @@ footer address p {
 footer .list {
   padding: 0;
   margin: 0;
-}
+} */
 
-footer .link-mail,
+/* footer .link-mail,
 footer .link-tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -650,7 +655,7 @@ footer .link-tel {
 footer .link-mail:hover,
 footer .link-tel:hover {
   color: #667eea;
-}
+} */
 
 p,
 h1,
@@ -696,7 +701,29 @@ img {
   line-height: 1.19;
   margin: 20px 0 20px 0;
 }
+.address {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--sub-text-color);
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
 
+.list-item-footer:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.list-item-footer {
+  list-style: none;
+}
+
+.contact-mail-footer,
+.contact-number-footer {
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
 /* ----------------HEADER----------------- */
 
 .header {
@@ -801,7 +828,7 @@ img {
 /* ---------------CONTACTS------------------- */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -815,16 +842,15 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  margin-left: 4px;
-  color: var(--text-hover-color);
+  color: var(--highlight-color);
 }
 
 .logo-footer-white {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--text-hover-color);
-  color: var(--sub-text-color);
+  color: var(--white-color);
 }
 
 .address {
